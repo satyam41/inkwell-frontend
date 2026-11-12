@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans">
         <AppProvider>
           <DynamicIsland />
-          <main className="max-w-6xl mx-auto px-5 pt-24 pb-20">{children}</main>
+          <main className="max-w-6xl mx-auto px-5 pt-6 pb-28 sm:pt-24 sm:pb-20">{children}</main>
           <AuthModal />
         </AppProvider>
       </body>

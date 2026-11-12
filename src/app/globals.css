@@ -50,17 +50,17 @@
   }
 
   .glass-btn-sm {
-    @apply px-3.5 py-1.5 text-xs;
+    @apply px-3 sm:px-3.5 py-1.5 text-xs;
   }
 
   .dynamic-island {
-    @apply flex items-center gap-2.5 min-h-[52px] px-2.5 py-1.5 rounded-[32px] text-white backdrop-blur-2xl relative overflow-hidden transition-all duration-300;
-    background: rgba(16, 18, 24, 0.85);
+    @apply flex items-center gap-1 sm:gap-2.5 min-h-[48px] sm:min-h-[52px] px-2 sm:px-2.5 py-1.5 rounded-[32px] text-white backdrop-blur-2xl relative overflow-hidden transition-all duration-300 max-w-[96vw];
+    background: rgba(16, 18, 24, 0.88);
     box-shadow: 0 20px 50px -12px rgba(10, 12, 18, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.14);
   }
 
   .glass-mode-indicator {
-    @apply fixed top-20 left-1/2 -translate-x-1/2 z-[60] px-5 py-2.5 rounded-full flex items-center gap-2.5 text-sm font-semibold backdrop-blur-2xl border transition-all duration-300;
+    @apply fixed bottom-20 sm:bottom-auto sm:top-20 left-1/2 -translate-x-1/2 z-[60] px-5 py-2.5 rounded-full flex items-center gap-2.5 text-sm font-semibold backdrop-blur-2xl border transition-all duration-300 whitespace-nowrap;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.36));
     border-color: rgba(255, 255, 255, 0.65);
     color: #14151a;

@@ -58,7 +58,7 @@ export default function DynamicIsland() {
 
   return (
     <>
-      <div className="fixed top-4 inset-x-0 z-50 flex justify-center pointer-events-none px-4">
+      <div className="fixed bottom-4 sm:bottom-auto sm:top-4 inset-x-0 z-50 flex justify-center pointer-events-none px-3 pb-[env(safe-area-inset-bottom)]">
         <header
           className={`dynamic-island pointer-events-auto ${
             searchOpen ? 'w-[min(680px,94vw)] px-3.5 py-2 rounded-[28px]' : ''
@@ -169,10 +169,10 @@ export default function DynamicIsland() {
                 <span className="w-6 h-6 rounded-lg bg-gradient-to-br from-[#ff6719] to-[#ff964f] grid place-items-center shadow-md shadow-orange-500/40">
                   <Feather size={14} />
                 </span>
-                <span>Inkwell</span>
+                <span className="hidden sm:inline">Inkwell</span>
               </Link>
 
-              <div className="w-px h-5 bg-white/15" />
+              <div className="hidden sm:block w-px h-5 bg-white/15 shrink-0" />
 
               <nav className="flex items-center gap-1">
                 <button
@@ -222,7 +222,7 @@ export default function DynamicIsland() {
                 </button>
               </nav>
 
-              <div className="w-px h-5 bg-white/15" />
+              <div className="hidden sm:block w-px h-5 bg-white/15 shrink-0" />
 
               <button
                 onClick={() => setSearchOpen(true)}
@@ -261,7 +261,7 @@ export default function DynamicIsland() {
               ) : (
                 <button
                   onClick={() => setAuthModalOpen(true)}
-                  className="glass-btn glass-btn-sm glass-btn-accent"
+                  className="glass-btn glass-btn-sm glass-btn-accent whitespace-nowrap shrink-0"
                 >
                   Sign in
                 </button>
